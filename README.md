@@ -3,9 +3,9 @@ Tic-Tac-Toe Minimax Algorithm
 Overview
 --------------------------------------------------------------------------------
 
-#### [Project Demo][CodePin]
+#### [Project Demo][Demo]
 
-**Date created:** Summer 2015/6.
+**Date created:** Summer 2015/16.
 
 ### Project description:
 
@@ -29,5 +29,5 @@ And that should be good enough for a start.
 
 ________________________________________________________________________________
 
-[CodePin]:https://codepen.io/u-ways/full/ZKErey/
+[Demo]:https://codepen.io/u-ways/full/ZKErey/
 [Algorithms_4th]:https://algs4.cs.princeton.edu/home/
