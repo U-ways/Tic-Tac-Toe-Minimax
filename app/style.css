@@ -1,0 +1,127 @@
+/* Green Lab template overrides/additions
+==============================================================================*/
+#header {
+  height: 75px;
+  margin: 0 0 0 0;
+} #proj-subheading {
+  height: 25px;
+  font-size: 1em;
+  font-style: italic;
+  margin: 0 0 0 1vh;
+} #details-body {
+  margin-top: 15px;
+} #proj-details summary {
+  margin-top: 15px;
+}
+
+/* Color Scheme
+================================================================================
+Main Colors:
+#c5dec2 - #95a893
+#3e5050 - #3a4949
+#263331 - #333
+Matching R&G:
+#549042 - #8e0000
+*//* App
+==============================================================================*/
+#app {
+  margin-top: 15px;
+  justify-content: flex-start;
+}
+
+#blocks-con {
+  margin: auto;
+  flex-wrap: wrap;
+  width: 430px;
+  padding: 20px 15px;
+  background-color: #739595;
+  border-radius: 4%;
+  border: 11px solid #c5dec2;
+  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.5)
+} #blocks-con > div {
+  height: 120px;
+  width: 120px;
+  padding: 5px;
+  color: #3e5050;
+  font-size: 100px;
+  font-weight: normal;
+  text-align: center;
+  border: 2.5px solid #c5dec2;
+  border-radius: 2%;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*Uncomment the colors so you can understand what I did*/
+/*(-n+3) Selects Only The First 3*/
+#blocks-con > div:nth-child(-n+3) {
+  border-top: none;
+/*   color: red; */
+} #blocks-con > div:nth-child(n+7) {
+  border-bottom: none;
+/*   color: yellow; */
+} #blocks-con > div:nth-child(3n) {
+  border-right: none;
+/*   color: blue; */
+} #blocks-con > div:nth-child(3n+1) {
+  border-left: none;
+/*   color: green; */
+}
+
+/* Symbol selection & Misc
+============================================*/
+#selection {
+  width: inherit;
+  margin-top: 0;
+  margin-bottom: 3vh;
+  padding: 0 0 2px 0;
+  text-align: center;
+  background-color: #c5dec2;
+  color: #3b4c4c;
+}
+
+.xo {
+  font-weight: 300;
+  cursor: pointer;
+  user-select: none;
+  font-size: 2em;
+  vertical-align: middle;
+} .xo:hover {
+  color: #739595;
+  text-decoration: underline;
+} .xo_active {
+  color: #739595;
+  text-decoration: underline;
+  font-weight: 300;
+}
+
+#draw, #won, #lost {
+  font-weight: 600;
+}
+
+.win {
+  color: #c5dec2 !important;
+  animation: 1.2s blinker .6s linear;
+  animation-iteration-count: 2;
+  transition: 1.2s;
+} @keyframes blinker {
+  50% { color: #374848;}
+}
+
+/* Reset button
+============================================*/
+#reset {
+  width: 200px;
+  margin: auto;
+  margin-top: 10px;
+  color: #3b4c4c;
+  font-size: 1.3em;
+  font-weight: 600;
+  background-color: #c5dec2;
+  border-radius: 4%;
+  border: 11px solid #c5dec2;
+  cursor: pointer;
+} #reset:active {
+  position: relative;
+  top: 4px;
+}
