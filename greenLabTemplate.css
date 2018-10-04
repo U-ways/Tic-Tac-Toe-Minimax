@@ -1,0 +1,219 @@
+/* Resets
+==============================================================================*/
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  outline-color: transparent;
+} body {
+  width: 100%;
+  font-size: calc(.3vw + 14px);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+} img {
+  object-fit: cover;
+  width: inherit;
+  height: inherit;
+} li {
+  list-style-type: none;
+}
+
+/* Scroll bar
+==============================================================================*/
+::-webkit-scrollbar {
+  width: 10px;
+} ::-webkit-scrollbar-track {
+  background: #95a893;
+} ::-webkit-scrollbar-thumb {
+  background: #283432;
+} ::-webkit-scrollbar-thumb:window-inactive {
+	background: #283432;
+}
+
+/* Pre-Classes
+==============================================================================*/
+.flex-c {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+} .flex-r {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+} .cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+} .cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+} .cols-6 {
+  grid-template-columns: repeat(6, 1fr);
+} .cols-7 {
+  grid-template-columns: repeat(7, 1fr);
+} .cols-8 {
+  grid-template-columns: repeat(8, 1fr);
+} .rows-2 {
+  grid-template-rows: repeat(2, 1fr);
+} .rows-3 {
+  grid-template-rows: repeat(3, 1fr);
+} .rows-6 {
+  grid-template-rows: repeat(6, 1fr);
+} .rows-7 {
+  grid-template-rows: repeat(7, 1fr);
+} .rows-8 {
+  grid-template-rows: repeat(8, 1fr);
+}
+
+/* Template Core
+==============================================================================*/
+#container {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-rows: [row-1] minmax(6vh,  60px)
+                      [row-2] minmax(90vh, auto)
+                      [row-3] minmax(4vh, 40px);
+  grid-gap: 0 0;
+  justify-items: stretch; /* x-axis */
+  align-items: stretch;   /* y-axis */
+  justify-content: stretch;
+  align-content: stretch;
+}
+
+#header {
+  z-index: 100;
+  grid-row: row-1;
+  align-items: center;
+  text-align: left;
+  background-color: #2e3c3c;
+  color: #c5dec2;
+}
+
+#app {
+  grid-row: row-2;
+  background-color: #3e5050;
+}
+
+#footer {
+  grid-row: row-3;
+  padding: 10px 1vw 0 0;
+  font-size: 0.9em;
+  text-align: right;
+  color: #4d6363;
+  background-color: #263331;
+} #footer a {
+  text-decoration: none;
+  color: #c5dec2;
+}
+
+/* Template Core Inside Components
+==============================================================================*/
+#proj-heading {
+  grid-column: 1 / span 5;
+  padding-left: 1vw;
+  font-size: 1.2em;
+}
+
+#proj-details {
+  grid-column: 6;
+  justify-self: end;
+  padding: 0.5vh 1vw 0 0;
+  text-align: right;
+} #proj-details summary {
+  font-weight: 600;
+  user-select: none;
+  cursor: pointer;
+} #proj-details summary:hover {
+  text-shadow: 0px 1px 8px #969696;
+}
+
+#proj-details[open] #details-body {
+  animation-name: fadeInDown;
+  animation-duration: 0.5s;
+}
+
+#details-body {
+  width: 100%;
+  position: absolute;
+  top: 60px; left: 0;
+  padding: 2vh 1.5vw 2vh 1.5vw;
+  background-color: #344444;
+  text-align: left;
+} #details-body a {
+  color: #c5dec2;
+}
+
+.details-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+} .details-column h3 {
+  font-size: 1.2em;
+} .details-column p {
+  padding: 1vh 3vw 2.5vh 1.5vw;
+  text-align: justify;
+} .details-column:nth-of-type(2) p {
+  padding-right: 1.2vw;
+}
+
+.details-column:nth-of-type(1) {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+.details-column:nth-of-type(2) {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-1.25em);
+  } 100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 900px) {
+  .details-column:nth-of-type(1) {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+  .details-column:nth-of-type(2) {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+  }
+}
+
+@media (max-width: 700px) {
+  #proj-heading {
+    grid-column: 1 / span 6;
+    text-align: center;
+  } #proj-details {
+    display: none;
+  }
+}
+
+/* Color Scheme
+================================================================================
+#c5dec2 - #95a893
+#3e5050 - #3a4949
+#263331 - #333
+
+#549042 - #8e0000
+
+*//* App
+==============================================================================*/
