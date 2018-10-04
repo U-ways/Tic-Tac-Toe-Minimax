@@ -11,9 +11,6 @@ Overview
 
 This is a Minimax algorithm implementation built on top of a Tic-Tac-Toe game I made in my free time. At the time of writing the algorithm, **it was one of the most accurate Minimax algorithm implemented in JavaScript** (based on the many bad minimax JavaScript implementations found when I was building this application.)
 
-I remember using Java and C++ guides and spending countless hours filling the gaps of my highschool knowledge to implement the algorithm correctly.
-
-
 
 ### Where can I learn more about the minimax algorithm?
 
@@ -24,7 +21,7 @@ Instead, I would recommend going through an Algorithms and Data structure book f
 - [Minimax algorithm - A brief description ](https://www.youtube.com/watch?v=6ELUvkSkCts)
 - [A simple animation of the Minimax algorithm ](https://www.youtube.com/watch?v=zDskcx8FStA)
 
-Then read:
+Then read: (I recommend Java or C++ guides)
 
 - [Tic-Tac-Toe: Understanding the Minimax Algorithm ](https://www.neverstopbuilding.com/blog/minimax)
 
