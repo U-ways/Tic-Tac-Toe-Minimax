@@ -7,7 +7,7 @@ Overview
 
 **Date created:** Summer 2015/6.
 
-#### Project description:
+### Project description:
 
 This is a Minimax algorithm implementation built on top of a Tic-Tac-Toe game I made in my free time. At the time of writing the algorithm, **it was the most accurate Minimax algorithm implemented in JavaScript** (based on the very bad minimax Js implementations I checked when I was building this application.)
 
@@ -15,8 +15,7 @@ I remember using Java and C++ guides and spending countless hours filling the ga
 
 
 
-Where can I learn more about the minimax algorithm?
---------------------------------------------------------------------------------
+### Where can I learn more about the minimax algorithm?
 
 Now that I am CS student with more knowledge and experience, I really don't recommend how I learned to write this algorithm. (brute-forcing missing knowledge where needed)
 
