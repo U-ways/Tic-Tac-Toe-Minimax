@@ -1,4 +1,4 @@
-Tic Tac Toe Minimax Algorithm
+Tic-Tac-Toe Minimax Algorithm
 ================================================================================
 Overview
 --------------------------------------------------------------------------------
@@ -26,7 +26,7 @@ Instead, I would recommend going through an Algorithms and Data structure book f
 
 Then read:
 
-- [Tic Tac Toe: Understanding the Minimax Algorithm ](https://www.neverstopbuilding.com/blog/minimax)
+- [Tic-Tac-Toe: Understanding the Minimax Algorithm ](https://www.neverstopbuilding.com/blog/minimax)
 
 And that should be good enough for a start.
 
