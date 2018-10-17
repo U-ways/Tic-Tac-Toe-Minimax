@@ -9,7 +9,7 @@ Overview
 
 ### Project description:
 
-This is a Minimax algorithm implementation built on top of a Tic-Tac-Toe game I made in my free time. At the time of writing the algorithm, **it was one of the most accurate Minimax algorithm implemented in JavaScript** (based on the many bad minimax JavaScript implementations found when I was building this application.)
+This is a Minimax algorithm implementation built on top of a Tic-Tac-Toe game I made in my free time.
 
 
 ### Where can I learn more about the minimax algorithm?
